@@ -49,7 +49,7 @@ function MovieList() {
         </ul>
       
 
-      {movieYear && hasFetched && !movieYear?.data?.length (
+      {movieYear && hasFetched && !moviesList?.data?.length (
         <div className="mt-50 slide-up-fade-in" data-testid="no-result">
           No Results Found
         </div>
