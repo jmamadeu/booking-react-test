@@ -3,7 +3,7 @@ import "./index.css";
 
 function MovieList() {
   const [movieYear, setMovieYear] = React.useState("");
-  const [moviesList, setMoviesList] = React.useState([]);
+  const [moviesList, setMoviesList] = React.useState({});
   const [hasFetched, setHasFetched] = React.useState(false);
 
   const handleSearchMovie = async () => {
@@ -14,6 +14,7 @@ function MovieList() {
     fetch(`https://jsonmock.hackerrank.com/api/movies?Year=${movieYear}`)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data)
         setMoviesList(data);
         setHasFetched(true);
       });
@@ -49,7 +50,7 @@ function MovieList() {
         </ul>
       
 
-      {movieYear && hasFetched && !moviesList?.data?.length (
+      {movieYear && hasFetched && !moviesList?.data?.length && (
         <div className="mt-50 slide-up-fade-in" data-testid="no-result">
           No Results Found
         </div>
