@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="2" time="5.065">
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2022-05-24T23:18:08" time="3.773" tests="4">
+    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.05">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;movieList&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;h8k-navbar
+        header=&quot;Movie List&quot;
+      /&gt;
+      &lt;div
+        class=&quot;layout-column align-items-center mt-50&quot;
+      &gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center&quot;
+        &gt;
+          &lt;input
+            class=&quot;large&quot;
+            data-testid=&quot;app-input&quot;
+            placeholder=&quot;Enter Year eg 2015&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;button
+            class=&quot;&quot;
+            data-testid=&quot;submit-button&quot;
+          &gt;
+            Search
+          &lt;/button&gt;
+        &lt;/section&gt;
+        
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/@testing-library/dom/dist/query-helpers.js:92:38
+    at /Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/@testing-library/dom/dist/query-helpers.js:64:17
+    at getByTestId (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/@testing-library/dom/dist/query-helpers.js:108:19)
+    at Object.&lt;anonymous&gt; (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/src/App.test.js:18:10)
+    at Object.asyncJestTest (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and no results found" name=" search is made on by clicking on search button and no results found" time="1.036">
+      <failure>Error: expect(received).not.toBe(expected) // Object.is equality
+
+Expected: not null
+
+&lt;html&gt;
+  &lt;head /&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;h8k-navbar
+          header=&quot;Movie List&quot;
+        /&gt;
+        &lt;div
+          class=&quot;layout-column align-items-center mt-50&quot;
+        &gt;
+          &lt;section
+            class=&quot;layout-row align-items-center justify-content-center&quot;
+          &gt;
+            &lt;input
+              class=&quot;large&quot;
+              data-testid=&quot;app-input&quot;
+              placeholder=&quot;Enter Year eg 2015&quot;
+              type=&quot;number&quot;
+              value=&quot;1996&quot;
+            /&gt;
+            &lt;button
+              class=&quot;&quot;
+              data-testid=&quot;submit-button&quot;
+            &gt;
+              Search
+            &lt;/button&gt;
+          &lt;/section&gt;
+          &lt;ul
+            class=&quot;mt-50 styled&quot;
+            data-testid=&quot;movieList&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    at /Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/src/App.test.js:37:44
+    at runWithExpensiveErrorDiagnosticsDisabled (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/@testing-library/dom/dist/config.js:51:12)
+    at checkCallback (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/@testing-library/dom/dist/wait-for.js:102:75)
+    at Timeout.callback (/Users/jmamadeu/Documents/coding-stuffs/trash/booking/4e40f216-4f41-4fea-919b-b2dd189adbee/node_modules/jest-environment-jsdom-fourteen/node_modules/jsdom/lib/jsdom/browser/Window.js:671:19)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)</failure>
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and result found - test 1" name=" search is made on by clicking on search button and result found - test 1" time="0.02">
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and result found - test 2" name=" search is made on by clicking on search button and result found - test 2" time="0.016">
+    </testcase>
+  </testsuite>
+</testsuites>
